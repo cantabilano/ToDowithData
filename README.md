@@ -9,5 +9,9 @@
 ##🛠️ 사용한 기술 스택 <br>
 <img src=https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png>
 <br><br>
+
+##🎥 시연 영상 <br>
+
+<br><br>
 ## 개발 기간
 * 2024.01.09.(월) - 2024.01.11.(목), (3일간)
