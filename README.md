@@ -10,8 +10,13 @@
 <img src=https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png>
 <br><br>
 
-##🎥 시연 영상 <br>
+
+##🎥 시연 영상
+ <br>
+ 
+<img width="80%" src=https://github.com/cantabilano/ToDowithData/assets/88497383/1454680b-1753-4010-8e05-d12fe54d2287>
 
 <br><br>
 ## 개발 기간
 * 2024.01.09.(월) - 2024.01.11.(목), (3일간)
+<br><br>
