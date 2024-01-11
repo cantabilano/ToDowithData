@@ -14,7 +14,7 @@
 ##🎥 시연 영상
  <br>
  
-<img width="80%" src=https://github.com/cantabilano/ToDowithData/assets/88497383/1454680b-1753-4010-8e05-d12fe54d2287 width="150" height="200"/>
+<img width="100%" src=https://github.com/cantabilano/ToDowithData/assets/88497383/1454680b-1753-4010-8e05-d12fe54d2287>
 
 <br><br><br>
 ## 개발 기간
