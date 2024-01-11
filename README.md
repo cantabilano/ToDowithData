@@ -18,8 +18,8 @@
 ##🖋️ 과제 결과물
 
 <br>
-![Jan-03-2024 09-33-55](https://github.com/NBCAMP-kiosk-team3/iOS/assets/107637741/9fc7a95e-285d-4df4-a2a5-b4ab8942fc53)
-!(https://github.com/cantabilano/ToDowithData/assets/88497383/1454680b-1753-4010-8e05-d12fe54d2287)
+
+<img src=https://github.com/cantabilano/ToDowithData/assets/88497383/1454680b-1753-4010-8e05-d12fe54d2287>
 
 
 <br><br><br>
