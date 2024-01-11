@@ -42,6 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          error conditions that could cause the creation of the store to fail.
         */
         let container = NSPersistentContainer(name: "ToDowithData")
+        //loadPersistentStores 해당 영구저장소를 호출
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
@@ -62,7 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     // MARK: - Core Data Saving support
-
+    // 코어데이터의 현재 상태를 저장
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {
