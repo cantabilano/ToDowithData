@@ -180,19 +180,17 @@ extension ToDoTableViewController {
         }
     }
     
-   override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-       
-       print(section)
-       
-        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderView.IdentifierInHeaderView) as? HeaderView else {
-            return nil
-        }
-       //headerView의 headerTitleLabel. text를 카테고리로 바꾼다.
-       // section을 인트값으로 파라미터를 받기 때문에 section index를 넣어줘야함.
-        headerView.headerTitleLabel.text = sortedCategory[section]
-       
-       //UIView인 headerView를 반환
-       return headerView
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+      
+      print(section)
+      
+      guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderView.IdentifierInHeaderView) as? HeaderView else {
+        return nil
+      }
+      
+      headerView.lblInHeaderView.text = sortedCategory[section]
+      
+      return headerView
     }
 }
 
