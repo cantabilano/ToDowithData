@@ -18,10 +18,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoTableViewCell" id="71W-Z2-oac" customClass="ToDoTableViewCell" customModule="ToDowithData" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="430" height="45"/>
+                                <rect key="frame" x="0.0" y="50" width="430" height="44.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="71W-Z2-oac" id="Ayy-JG-Fkl" customClass="ToDoTableVieCell" customModule="ToDowithData" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="430" height="45"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="430" height="44.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ncr-uc-QwL">
@@ -31,23 +31,34 @@
                                             </connections>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LF7-27-xEz">
-                                            <rect key="frame" x="20" y="11.999999999999998" width="321" height="21.333333333333329"/>
+                                            <rect key="frame" x="20" y="12" width="321" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7F6-VQ-c5j">
+                                            <rect key="frame" x="20" y="21.333333333333332" width="321" height="2"/>
+                                            <color key="backgroundColor" systemColor="systemRedColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="2" id="C4x-fL-hy0"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="LF7-27-xEz" firstAttribute="top" secondItem="Ayy-JG-Fkl" secondAttribute="topMargin" constant="1" id="4CM-dR-d1X"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="LF7-27-xEz" secondAttribute="bottom" constant="0.67000000000000004" id="9Qc-Te-HVy"/>
                                         <constraint firstItem="ncr-uc-QwL" firstAttribute="centerY" secondItem="Ayy-JG-Fkl" secondAttribute="centerY" id="HZL-5R-zyi"/>
+                                        <constraint firstItem="7F6-VQ-c5j" firstAttribute="trailing" secondItem="LF7-27-xEz" secondAttribute="trailing" id="Kax-ng-AyI"/>
                                         <constraint firstItem="ncr-uc-QwL" firstAttribute="centerX" secondItem="Ayy-JG-Fkl" secondAttribute="centerX" constant="160.5" id="KqO-Qv-iKH"/>
+                                        <constraint firstItem="7F6-VQ-c5j" firstAttribute="leading" secondItem="LF7-27-xEz" secondAttribute="leading" id="Unf-gl-N7s"/>
+                                        <constraint firstItem="7F6-VQ-c5j" firstAttribute="centerY" secondItem="LF7-27-xEz" secondAttribute="centerY" id="blm-wt-QVj"/>
                                         <constraint firstItem="ncr-uc-QwL" firstAttribute="leading" secondItem="LF7-27-xEz" secondAttribute="trailing" constant="10" id="i2G-u3-cez"/>
                                         <constraint firstItem="LF7-27-xEz" firstAttribute="leading" secondItem="Ayy-JG-Fkl" secondAttribute="leadingMargin" id="nbb-De-Yg6"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="doneSwitch" destination="ncr-uc-QwL" id="0yU-Ae-nhO"/>
+                                    <outlet property="strikeThroughView" destination="7F6-VQ-c5j" id="7vI-jW-YIh"/>
                                     <outlet property="titleLabel" destination="LF7-27-xEz" id="5dW-gO-op5"/>
                                     <segue destination="knD-3G-For" kind="presentation" identifier="sgDetail" id="o1W-ZP-z0x"/>
                                 </connections>
@@ -133,6 +144,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

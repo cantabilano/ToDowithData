@@ -72,8 +72,9 @@ final class DataManager {
 //            print("Failed to save todos: \(error.localizedDescription)")
 //        }
     }
+    //딕셔너리를 활용해서 [RemoteTodo]에는 같은 카테고리끼리 묶음
     func readAllAndCategorize() -> [String: [RemoteTodo]] {
-        let todoList = getData()
+        let todoList = getData()  // 1차원 배열을 grouping by라는 API활용
         return Dictionary(grouping: todoList) {
             RemoteTodo in RemoteTodo.category
         }
@@ -99,7 +100,7 @@ final class DataManager {
     }
     // 업데이트된 ToDo 목록을 인코딩하여 UserDefaults에 저장, 기존 데이터를 덮어쓰는 역할
     // 배열에서 id를 찾아야한다.
-    func updateData(todoId: Int, title: String? = nil, isCompleted: Bool? = nil) {
+    func updateData(todoId: Int, isCompleted: Bool? = nil) {
         var todoList = getData()
         
         guard let searchIndex = todoList.firstIndex(where: { $0.id == todoId})
@@ -108,9 +109,7 @@ final class DataManager {
         }
         
         //todoList의 subscript로 하나의 배열에 접근
-        if let newtitle = title {
-            todoList[searchIndex].title = newtitle
-        }
+
         if let newIsComplete = isCompleted {
             todoList[searchIndex].isCompleted = newIsComplete
         }
