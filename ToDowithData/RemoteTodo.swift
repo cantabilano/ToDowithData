@@ -8,10 +8,10 @@
 import UIKit
 
 struct RemoteTodo : Codable {
-    var id: Int
-    var title: String
+    let id: Int
+    let title: String
     var isCompleted: Bool
-    var category: String
+    let category: String
 }
 
 extension RemoteTodo { //title만 넣으면 id는 새로 생성해서 저장하는 

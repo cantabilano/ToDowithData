@@ -5,51 +5,15 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
-            uuid = "5532F044-64A5-4F26-85E7-B2816B6F44DF"
-            shouldBeEnabled = "No"
+            uuid = "7558AF06-31EB-44D9-92EC-E58C58341D28"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ToDowithData/ToDoTableViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "changedSwitch(todoid:isCompleted:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "5532F044-64A5-4F26-85E7-B2816B6F44DF - c095e38f9ae90977"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ToDowithData.ToDoTableViewController.changedSwitch(todoid: Swift.Int, isCompleted: Swift.Bool) -&gt; ()"
-                  moduleName = "ToDowithData"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jasonyang/Desktop/%E1%84%82%E1%85%A2%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%87%E1%85%A2%E1%84%8B%E1%85%AE%E1%86%B7%E1%84%8F%E1%85%A2%E1%86%B7%E1%84%91%E1%85%B3/Chapter%203-3/ToDowithData/ToDowithData/ToDoTableViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "163"
-                  endingLineNumber = "163"
-                  offsetFromSymbolStart = "204">
-               </Location>
-               <Location
-                  uuid = "5532F044-64A5-4F26-85E7-B2816B6F44DF - c095e38f9ae90956"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ToDowithData.ToDoTableViewController.changedSwitch(todoid: Swift.Int, isCompleted: Swift.Bool) -&gt; ()"
-                  moduleName = "ToDowithData"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jasonyang/Desktop/%E1%84%82%E1%85%A2%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%87%E1%85%A2%E1%84%8B%E1%85%AE%E1%86%B7%E1%84%8F%E1%85%A2%E1%86%B7%E1%84%91%E1%85%B3/Chapter%203-3/ToDowithData/ToDowithData/ToDoTableViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "164"
-                  endingLineNumber = "164"
-                  offsetFromSymbolStart = "96">
-               </Location>
-            </Locations>
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

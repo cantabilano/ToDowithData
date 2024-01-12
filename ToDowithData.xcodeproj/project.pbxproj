@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C802B3342B512B65002123A9 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C802B3332B512B65002123A9 /* HeaderView.xib */; };
+		C87007CF2B516BF400630333 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87007CE2B516BF400630333 /* HeaderView.swift */; };
 		C8A137012B4D6D7100CA0200 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A137002B4D6D7100CA0200 /* DataManager.swift */; };
 		C8F4BFD42B4CE45E002A7872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F4BFD32B4CE45E002A7872 /* AppDelegate.swift */; };
 		C8F4BFD62B4CE45E002A7872 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F4BFD52B4CE45E002A7872 /* SceneDelegate.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C802B3332B512B65002123A9 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		C87007CE2B516BF400630333 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = ../HeaderView.swift; sourceTree = "<group>"; };
 		C8A137002B4D6D7100CA0200 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		C8F4BFD02B4CE45E002A7872 /* ToDowithData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDowithData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F4BFD32B4CE45E002A7872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 			children = (
 				C8F4BFEA2B4CE5B9002A7872 /* ToDoTableViewController.swift */,
 				C8F4BFEC2B4CE5CE002A7872 /* DetailViewController.swift */,
+				C87007CE2B516BF400630333 /* HeaderView.swift */,
+				C802B3332B512B65002123A9 /* HeaderView.xib */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 				C8F4BFE32B4CE45F002A7872 /* LaunchScreen.storyboard in Resources */,
 				C8F4BFE02B4CE45F002A7872 /* Assets.xcassets in Resources */,
 				C8F4BFDB2B4CE45E002A7872 /* Main.storyboard in Resources */,
+				C802B3342B512B65002123A9 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +200,7 @@
 				C8F4BFEB2B4CE5B9002A7872 /* ToDoTableViewController.swift in Sources */,
 				C8F4BFF92B4CF8BE002A7872 /* ToDoTableViewCell.swift in Sources */,
 				C8F4BFED2B4CE5CE002A7872 /* DetailViewController.swift in Sources */,
+				C87007CF2B516BF400630333 /* HeaderView.swift in Sources */,
 				C8F4BFD42B4CE45E002A7872 /* AppDelegate.swift in Sources */,
 				C8F4BFD62B4CE45E002A7872 /* SceneDelegate.swift in Sources */,
 				C8A137012B4D6D7100CA0200 /* DataManager.swift in Sources */,

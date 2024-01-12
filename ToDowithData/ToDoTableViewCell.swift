@@ -10,11 +10,11 @@ protocol ToDotvCellDelegate: AnyObject { // 클래스만 선언할 수 있는 �
 }
 
 import UIKit
-
 class ToDoTableViewCell: UITableViewCell {
     
     static let reuseIdentifier = String(describing: ToDoTableViewCell.self)
 
+    @IBOutlet weak var strikeThroughView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var doneSwitch: UISwitch!
     
@@ -36,6 +36,7 @@ class ToDoTableViewCell: UITableViewCell {
       self.cellTodo = todoFromRemoteTodo
       titleLabel.text = todoFromRemoteTodo.title
       doneSwitch.isOn = todoFromRemoteTodo.isCompleted
+        strikeThroughView.isHidden = !todoFromRemoteTodo.isCompleted
     }
     
 //    func setTask(_ receivedToDo: RemoteTodo) {
